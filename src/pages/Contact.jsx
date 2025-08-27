@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { supabase } from '../lib/supabaseClient';
+// import { supabase } from '../lib/supabaseClient';
 
 export default function Contact() {
   const [form, setForm] = useState({ name:'', email:'', message:'' });
