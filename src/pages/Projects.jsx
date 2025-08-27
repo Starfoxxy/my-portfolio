@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Travel Planner",
-    desc: "Built with React, Supabase, Prisma",
-    link: "https://github.com/your-repo",
+    title: "EcoBridge",
+    desc: "EcoBridge’s mission is to empower individuals with special needs through music, art, and storytelling, while also serving as an advocacy hub for families. Built with a React frontend and a Node.js + Express backend, it uses Prisma with a SQLite database to provide secure API endpoints for managing creative content, user data, and authentication. Tech Stack: Node.js, Express, Prisma, SQLite, REST API.",
+    link: "https://github.com/tokslaw7/ecobridge.git",
   },
   {
-    title: "Marketing Dashboard",
-    desc: "API-powered app with Node.js and Express",
-    link: "https://github.com/your-repo",
+    title: "TravelHaven",
+    desc: "TravelHaven is an interactive web app that helps users explore destinations, discover nearby attractions, and plan trips effortlessly. Features include location search, coordinate lookup, points-of-interest discovery, and detailed place information. Tech Stack: React, Supabase, Tailwind CSS, OpenTripMap API, JavaScript (ES6+).",
+    link: "https://github.com/Starfoxxy/travel-planner-site.git",
   },
   {
     title: "Donezo",
-    desc: "Full-stack app with authentication",
-    link: "https://github.com/your-repo",
+    desc: "Donezo is a full-stack task management application designed for productivity and simplicity. The backend is built with Node.js, Prisma, and Supabase, featuring JWT-based authentication and role-based authorization to ensure secure access control. The frontend is a React single-page application that connects to Supabase for data management and user authentication, providing a seamless and responsive experience. Tech Stack: React, Node.js, Prisma, Supabase, JWT Authentication, REST API.",
+    link: "https://github.com/Starfoxxy/Athena_J_Donezo.git",
   },
 ];
 
