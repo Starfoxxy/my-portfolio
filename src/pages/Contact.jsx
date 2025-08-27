@@ -15,12 +15,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 flex flex-col items-center justify-center gap-6 px-6 md:px-20"
+      className="min-h-screen flex flex-col items-center justify-center py-24 bg-gray-900 text-white text-center"
       style={{
-        background: "linear-gradient(135deg, #0F2027, #203A43, #2C5364)", // same as About Me
+        background: "linear-gradient(135deg, #0F2027, #203A43, #2C5364)",
       }}
     >
-      <h2 className="text-3xl font-bold mb-6 text-white">Contact Me</h2>
+      <h2 className="text-4xl font-bold mb-10 text-white tracking-wide">Contact Me</h2>
       {success && <p className="text-green-500 mb-4">Message sent!</p>}
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
         <input 

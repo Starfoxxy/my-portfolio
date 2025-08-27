@@ -24,9 +24,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-900 text-white text-center">
+    <section id="projects" className="min-h-screen flex flex-col items-center justify-center py-24 bg-gray-900 text-white text-center">
       <h2 className="text-4xl font-bold mb-12">My Projects</h2>
-      <div className="grid md:grid-cols-3 gap-8 px-6">
+      <div className="grid md:grid-cols-3 gap-8 px-6 w-full max-w-6xl">
         {projects.map((p, i) => (
           <motion.a
             key={i}

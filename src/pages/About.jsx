@@ -5,7 +5,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="relative py-24 flex flex-col items-center px-6 md:px-20 scroll-mt-24"
+      className="min-h-screen flex flex-col items-center justify-center py-24 bg-gray-800 text-white text-center"
       style={{
         background: "linear-gradient(135deg, #0F2027, #203A43, #2C5364)",
       }}
@@ -14,9 +14,10 @@ export default function About() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8 }}
     >
+    <div className="relative flex flex-col items-center justify-center"></div>
       <div className="absolute inset-0 bg-gray-900 -z-10"></div>
         <div className="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-gray-800 via-gray-900 to-gray-900 opacity-50 -z-10"></div>
-       <div className="relative z-10 mt-0">
+      <div className="relative z-10 mt-0">
         <img
           src="/images/Professional-Headshot.png"
           alt="Athena Jacob"
@@ -24,8 +25,8 @@ export default function About() {
         />
       </div>
 
-      <div className="max-w-xl text-center mt-6">
-        <h2 className="text-3xl font-bold mb-4 text-white">About Me</h2>
+      <div className="max-w-xl text-center mt-5">
+        <h2 className="text-4xl font-bold mb-4 text-white tracking-wide">About Me</h2>
         <p className="text-gray-300 text-lg leading-relaxed">
           Hi, I’m <span className="text-blue-500 font-semibold">Athena Jacob</span>!<br /><br />
 
