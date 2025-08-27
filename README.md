@@ -68,8 +68,6 @@ To explore this project on your own machine:
    npm run dev
 
 
-
-
 ## 🚀 Features  
 
 - 🌐 **Responsive Navbar** – Smooth navigation across sections  
@@ -79,6 +77,7 @@ To explore this project on your own machine:
 - ✉️ **Contact Section** – Simple contact info or form  
 - 🎞️ **Animations & Effects** – Hover animations powered by Framer Motion  
 - 🛠️ **Customizable Code** – Easily update content in `src/components` and `src/pages`  
+
 
 
 ## 🙌 Thank You!
