@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { supabase } from '../lib/supabaseClient';
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name:'', email:'', message:'' });
@@ -20,7 +20,7 @@ export default function Contact() {
         <input value={form.name} onChange={e => setForm({...form,name:e.target.value})} placeholder="Name" required className="border p-2"/>
         <input value={form.email} onChange={e => setForm({...form,email:e.target.value})} placeholder="Email" type="email" required className="border p-2"/>
         <textarea value={form.message} onChange={e => setForm({...form,message:e.target.value})} placeholder="Message" required className="border p-2"/>
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition relative">
+        <button type="submit" className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
           Send
         </button>
       </form>

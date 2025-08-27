@@ -6,7 +6,7 @@ export default function About() {
     >
       <h2 className="text-5xl font-bold mb-6">About Me</h2>
       <p className="max-w-xl text-gray-700 text-lg mb-4">
-        Hi, I’m <span className="text-blue-500 font-semibold">Athena Jacob</span>!<br /><br />
+        Hi, I’m <span className="text-blue-500 font-semibold">Athena</span>!<br /><br />
 
         I started my career as a Product Manager in digital marketing, where I learned how to craft strategies, connect with audiences, and drive impactful campaigns. Along the way, I discovered my true passion lies in building technology that empowers people, which led me to transition into <span className="text-blue-500 font-semibold">software engineering</span>.<br /><br />
 
