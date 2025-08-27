@@ -1,5 +1,29 @@
-export default function Sparkle() {
+import { useCallback } from "react";
+import Particles from "@tsparticles/react";
+import { loadFull } from "tsparticles";
+
+export default function Sparkles() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
   return (
-    <div className="absolute w-1 h-1 bg-yellow-300 rounded-full animate-ping" />
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      options={{
+        fullScreen: { enable: false },
+        background: { color: "transparent" },
+        particles: {
+          number: { value: 60 },
+          size: { value: 2 },
+          move: { enable: true, speed: 0.5 },
+          opacity: { value: 0.6 },
+          links: { enable: false },
+          color: { value: "#ffffff" },
+        },
+      }}
+      className="absolute inset-0 -z-10"
+    />
   );
 }
