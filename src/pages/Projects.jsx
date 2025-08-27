@@ -34,6 +34,7 @@ export default function Projects() {
             description={p.desc}
             image={p.img}
             link={p.link}
+            href={p.link}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ rotate: -1, scale: 1.05 }}
