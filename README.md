@@ -59,24 +59,30 @@ To explore this project on your own machine:
 
 2. Install dependencies:
 
+   ```bash
    npm install
 
 3. Start the development server:
-
+ 
+   ```bash
    npm run dev
 
-   ---
 
-🎨 How to Use
 
-   Navigate sections with the navbar
 
-   Hover over project cards for animations
+## 🚀 Features  
 
-   Customize content in src/components and src/pages
+- 🌐 **Responsive Navbar** – Smooth navigation across sections  
+- 🏠 **Home Section** – Intro with name, title, and styled design  
+- 👩‍💻 **About Section** – Short bio and career background  
+- 📂 **Projects Section** – Grid of project cards with hover animations  
+- ✉️ **Contact Section** – Simple contact info or form  
+- 🎞️ **Animations & Effects** – Hover animations powered by Framer Motion  
+- 🛠️ **Customizable Code** – Easily update content in `src/components` and `src/pages`  
 
-🙌 Thank You!
 
-   Thanks for visiting! Feel free to reach out, collaborate, or just say hi. ✨
+## 🙌 Thank You!
 
-   Connect with me!
+Thanks for visiting! I appreciate your time and interest in my work. Feel free to reach out, collaborate, or just say hi. ✨
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/athena-jacob-aj) or [GitHub](https://github.com/starfoxxy)!
