@@ -37,15 +37,25 @@ Hey there! I’m **Athena Jacob**, a Software Engineer passionate about building
 
 ---
 
+## 📂 Projects
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Project One** | Built with React, Supabase, and Prisma for a full-stack demo | [View Repo](https://github.com/your-repo) |
+| **Project Two** | Portfolio website built with Vite & Tailwind CSS | [View Repo](https://github.com/your-repo) |
+| **Project Three** | API-powered app with Node.js and Express | [View Repo](https://github.com/your-repo) |
+
+---
+
 ## 💻 Running Locally
 
 To explore this project on your own machine:
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/my-portfolio.git
-cd my-portfolio
+   ```bash
+   git clone https://github.com/yourusername/my-portfolio.git
+   cd my-portfolio
 
 2. Install dependencies:
 
