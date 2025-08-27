@@ -41,9 +41,9 @@ Hey there! I’m **Athena Jacob**, a Software Engineer passionate about building
 
 | Project | Description | Link |
 |---------|-------------|------|
-| **Travel Planner** | Built with React, Supabase, and Prisma for a full-stack demo | [View Repo](https://github.com/your-repo) |
-| **Portfolio** | Portfolio website built with Vite & Tailwind CSS | [View Repo](https://github.com/your-repo) |
-| **Marketing Dashboard** | API-powered app with Node.js and Express | [View Repo](https://github.com/your-repo) |
+| **EcoBridge** | EcoBridge’s mission is to empower individuals with special needs through music, art, and storytelling, while also serving as an advocacy hub for families. Built with a React frontend and a Node.js + Express backend, it uses Prisma with a SQLite database to provide secure API endpoints for managing creative content, user data, and authentication. Tech Stack: Node.js, Express, Prisma, SQLite, REST API. | [View Repo](https://github.com/tokslaw7/ecobridge.git) |
+| **TravelHaven** | TravelHaven is an interactive web app that helps users explore destinations, discover nearby attractions, and plan trips effortlessly. Features include location search, coordinate lookup, points-of-interest discovery, and detailed place information. Tech Stack: React, Supabase, Tailwind CSS, OpenTripMap API, JavaScript (ES6+). | [View Repo](https://github.com/Starfoxxy/travel-planner-site.git) |
+| **Donezo** | Donezo is a full-stack task management application designed for productivity and simplicity. The backend is built with Node.js, Prisma, and Supabase, featuring JWT-based authentication and role-based authorization to ensure secure access control. The frontend is a React single-page application that connects to Supabase for data management and user authentication, providing a seamless and responsive experience. Tech Stack: React, Node.js, Prisma, Supabase, JWT Authentication, REST API. | [View Repo](https://github.com/Starfoxxy/Athena_J_Donezo.git) |
 
 ---
 
@@ -59,24 +59,30 @@ To explore this project on your own machine:
 
 2. Install dependencies:
 
-npm install
+   ```bash
+   npm install
 
 3. Start the development server:
+ 
+   ```bash
+   npm run dev
 
-npm run dev
 
----
 
-🎨 How to Use
 
-Navigate sections with the navbar
+## 🚀 Features  
 
-Hover over project cards for animations
+- 🌐 **Responsive Navbar** – Smooth navigation across sections  
+- 🏠 **Home Section** – Intro with name, title, and styled design  
+- 👩‍💻 **About Section** – Short bio and career background  
+- 📂 **Projects Section** – Grid of project cards with hover animations  
+- ✉️ **Contact Section** – Simple contact info or form  
+- 🎞️ **Animations & Effects** – Hover animations powered by Framer Motion  
+- 🛠️ **Customizable Code** – Easily update content in `src/components` and `src/pages`  
 
-Customize content in src/components and src/pages
 
-🙌 Thank You!
+## 🙌 Thank You!
 
-Thanks for visiting! Feel free to reach out, collaborate, or just say hi. ✨
+Thanks for visiting! I appreciate your time and interest in my work. Feel free to reach out, collaborate, or just say hi. ✨
 
-Connect with me!
+Connect with me on [LinkedIn](https://www.linkedin.com/in/athena-jacob-aj) or [GitHub](https://github.com/starfoxxy)!
