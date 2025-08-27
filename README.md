@@ -1,12 +1,72 @@
-# React + Vite
+# 🌟 Athena Jacob Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Website](https://img.shields.io/badge/Website-Portfolio-blue)](https://your-portfolio-link.com)
+[![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react&logoColor=white)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.3-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-4.4.9-blue?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Framer Motion](https://img.shields.io/badge/FramerMotion-6.6.5-blue?logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👋 Hello!
 
-## Expanding the ESLint configuration
+Hey there! I’m **Athena Jacob**, a Software Engineer passionate about building **clean, interactive, and responsive web experiences**. This portfolio showcases some of my favorite projects, my skills, and ways to get in touch.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Technologies I Used
+
+- **React** – For building interactive UI components  
+- **Vite** – Lightning-fast development and build tool  
+- **Tailwind CSS (via CDN)** – Utility-first styling for modern design  
+- **Framer Motion** – Smooth animations and hover effects  
+- **Supabase** – Backend-as-a-Service for demo apps  
+- **Swiper.js** – Optional carousel/slider functionality  
+- **JavaScript (ES6+)** – Core frontend logic  
+
+---
+
+## 🚀 Features
+
+- **Responsive Navbar** – Smooth scrolling across sections  
+- **Home Section** – Intro with name, title, and style  
+- **About Section** – Short bio and description  
+- **Projects Section** – Grid of project cards with hover animations  
+- **Contact Section** – Simple contact info or form  
+- **Animations & Effects** – Hover effects powered by Framer Motion  
+
+---
+
+## 💻 Running Locally
+
+To explore this project on your own machine:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/my-portfolio.git
+cd my-portfolio
+
+2. Install dependencies:
+
+npm install
+
+3. Start the development server:
+
+npm run dev
+
+---
+
+🎨 How to Use
+
+Navigate sections with the navbar
+
+Hover over project cards for animations
+
+Customize content in src/components and src/pages
+
+🙌 Thank You!
+
+Thanks for visiting! Feel free to reach out, collaborate, or just say hi. ✨
+
+Connect with me!
