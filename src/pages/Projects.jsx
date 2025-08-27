@@ -1,18 +1,19 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Project One",
+    title: "Travel Planner",
     desc: "Built with React, Supabase, Prisma",
     link: "https://github.com/your-repo",
   },
   {
-    title: "Project Two",
+    title: "Marketing Dashboard",
     desc: "API-powered app with Node.js and Express",
     link: "https://github.com/your-repo",
   },
   {
-    title: "Project Three",
+    title: "Donezo",
     desc: "Full-stack app with authentication",
     link: "https://github.com/your-repo",
   },
