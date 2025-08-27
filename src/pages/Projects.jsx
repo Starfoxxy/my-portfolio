@@ -5,19 +5,19 @@ const projects = [
   {
     title: "EcoBridge",
     desc: "EcoBridge’s mission is to empower individuals with special needs through music, art, and storytelling, while also serving as an advocacy hub for families. Built with a React frontend and a Node.js + Express backend, it uses Prisma with a SQLite database to provide secure API endpoints for managing creative content, user data, and authentication. Tech Stack: Node.js, Express, Prisma, SQLite, REST API.",
-    img: "",
+    img: "/images/EcoBridge.png",
     link: "https://github.com/tokslaw7/ecobridge.git",
   },
   {
-    title: "TravelHaven",
-    desc: "TravelHaven is an interactive web app that helps users explore destinations, discover nearby attractions, and plan trips effortlessly. Features include location search, coordinate lookup, points-of-interest discovery, and detailed place information. Tech Stack: React, Supabase, Tailwind CSS, OpenTripMap API, JavaScript (ES6+).",
-    img: "",
+    title: "Travel Haven",
+    desc: "Travel Haven is an interactive web app that helps users explore destinations, discover nearby attractions, and plan trips effortlessly. Features include location search, coordinate lookup, points-of-interest discovery, and detailed place information. Tech Stack: React, Supabase, Tailwind CSS, OpenTripMap API, JavaScript (ES6+).",
+    img: "/images/Travel-Haven.png",
     link: "https://github.com/Starfoxxy/travel-planner-site.git",
   },
   {
     title: "Donezo",
     desc: "Donezo is a full-stack task management application designed for productivity and simplicity. The backend is built with Node.js, Prisma, and Supabase, featuring JWT-based authentication and role-based authorization to ensure secure access control. The frontend is a React single-page application that connects to Supabase for data management and user authentication, providing a seamless and responsive experience. Tech Stack: React, Node.js, Prisma, Supabase, JWT Authentication, REST API.",
-    img: "",
+    img: "/images/Donezo.gif",
     link: "https://github.com/Starfoxxy/Athena_J_Donezo.git",
   },
 ];
@@ -30,7 +30,10 @@ export default function Projects() {
         {projects.map((p, i) => (
           <motion.a
             key={i}
-            href={p.link}
+            title={p.title}
+            description={p.desc}
+            image={p.img}
+            link={p.link}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ rotate: -1, scale: 1.05 }}
