@@ -59,24 +59,24 @@ To explore this project on your own machine:
 
 2. Install dependencies:
 
-npm install
+   npm install
 
 3. Start the development server:
 
-npm run dev
+   npm run dev
 
----
+   ---
 
 🎨 How to Use
 
-Navigate sections with the navbar
+   Navigate sections with the navbar
 
-Hover over project cards for animations
+   Hover over project cards for animations
 
-Customize content in src/components and src/pages
+   Customize content in src/components and src/pages
 
 🙌 Thank You!
 
-Thanks for visiting! Feel free to reach out, collaborate, or just say hi. ✨
+   Thanks for visiting! Feel free to reach out, collaborate, or just say hi. ✨
 
-Connect with me!
+   Connect with me!
