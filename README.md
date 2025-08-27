@@ -41,9 +41,9 @@ Hey there! I’m **Athena Jacob**, a Software Engineer passionate about building
 
 | Project | Description | Link |
 |---------|-------------|------|
-| **Project One** | Built with React, Supabase, and Prisma for a full-stack demo | [View Repo](https://github.com/your-repo) |
-| **Project Two** | Portfolio website built with Vite & Tailwind CSS | [View Repo](https://github.com/your-repo) |
-| **Project Three** | API-powered app with Node.js and Express | [View Repo](https://github.com/your-repo) |
+| **Travel Planner** | Built with React, Supabase, and Prisma for a full-stack demo | [View Repo](https://github.com/your-repo) |
+| **Portfolio** | Portfolio website built with Vite & Tailwind CSS | [View Repo](https://github.com/your-repo) |
+| **Marketing Dashboard** | API-powered app with Node.js and Express | [View Repo](https://github.com/your-repo) |
 
 ---
 
