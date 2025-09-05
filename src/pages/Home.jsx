@@ -2,30 +2,37 @@ import React from "react";
 import { motion } from "framer-motion";
 import Sparkle from '../components/Sparkle';
 
-export default function Home({ Athena }) {
+export default function Home() {
   return (
     <section
       id="home"
-      className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white relative"
-      style={{ backgroundImage: "url('/images/polar-lights.jpg')" }}
+      className="relative min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
+      style={{ backgroundImage: "url('src/assets/Tech.png')" }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <motion.img
+        src="/Professional Headshot Original.JPG"
+        alt="Athena Jacob"
+        className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-xl object-cover mb-6 md:mb-0 md:mr-10"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+      />
+      <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="relative z-10 flex flex-col items-center text-center px-4">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-          Hi, I'm Athena
+      <div className="relative z-10">
+        <h1 className="text-6xl font-bold mb-4 text-white">
+          Hi, I'm Athena Jacob
         </h1>
-        <p className="text-xl md:text-2xl max-w-xl drop-shadow-md">
-          Software Engineer • React • Supabase • Tailwind CSS
+        <p className="text-2xl text-gray-200">
+          Software Engineer | React & SQL
         </p>
-
         <motion.button
           onClick={() => window.open('/resume.pdf', '_blank')}
-          className="mt-6 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition flex items-center gap-2"
+          className="mt-6 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
         >
-          <a href="/images/Resume 2025.docx" target="_blank" rel="noopener noreferrer" className="text-white">
-            Resume ✨
-          </a>
+        <a href="/Athena Jacob Resume 2025 .md" target="_blank" rel="noopener noreferrer" className="text-white">
+          Resume ✨
+        </a>
           <Sparkle />
         </motion.button>
       </div>
