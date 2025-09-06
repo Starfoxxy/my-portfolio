@@ -15,14 +15,14 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center py-24 bg-gray-900 text-white text-center"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
       style={{
-        background: "linear-gradient(135deg, #0F2027, #203A43, #2C5364)",
+        backgroundImage: "url('src/assets/45176473_9155702.jpg')",
       }}
     >
-      <h2 className="text-4xl font-bold mb-10 text-white tracking-wide">Contact Me</h2>
+      <h2 className="text-5xl font-bold mb-10 text-white tracking-wide">Contact Me</h2>
       {success && <p className="text-green-500 mb-4">Message sent!</p>}
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-8 w-full max-w-lg bg-black/40 p-8 rounded-2xl shadow-lg backdrop-blur-md">
         <input 
           value={form.name} 
           onChange={e => setForm({...form,name:e.target.value})} 
@@ -45,7 +45,7 @@ export default function Contact() {
           required 
           className="border p-2 rounded-md bg-white text-black placeholder-gray-400"
         />
-        <button type="submit" className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+        <button type="submit" className="px-6 py-3 bg-fuchsia-600 text-white rounded-lg hover:bg-fuchsia-500 transition">
           Send
         </button>
       </form>
