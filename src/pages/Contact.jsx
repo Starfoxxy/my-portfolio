@@ -17,7 +17,7 @@ export default function Contact() {
       id="contact"
       className="relative min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('src/assets/45176473_9155702.jpg')",
+        backgroundImage: "url('src/assets/Geometric.jpg')",
       }}
     >
       <h2 className="text-5xl font-bold mb-10 text-white tracking-wide">Contact Me</h2>
