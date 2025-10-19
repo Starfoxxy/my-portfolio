@@ -6,7 +6,7 @@ const projects = [
     title: "TAP Events Platform",
     desc: "Full-featured events platform for the Teacher Accelerator Program (TAP) with dynamic filtering, responsive UI, and HubSpot CRM integration.",
     tech: ["Next.js", "React", "Tailwind CSS", "HubSpot API", "TypeScript"],
-    img: "src/assets/TAP-Events.png",
+    img: "src/assets/TAP.png",
     live: "#",
     code: "#",
     featured: true,
