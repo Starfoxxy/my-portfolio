@@ -1,147 +1,185 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
 import Headshot from "../assets/Professional-Headshot.png";
-
-const bioCards = [
-  <span>
-    Hi, I’m <span className="text-cyan-500 font-semibold">Athena Jacob</span>!
-  </span>,
-  <span>
-    I started my career as a <span className="text-cyan-500 font-semibold">Product Manager</span> in digital marketing,
-    where I learned how to craft strategies, connect with audiences, and drive impactful campaigns. Along the way, I
-    discovered my true passion lies in building technology that empowers people, which led me to transition into{" "}
-    <span className="text-cyan-500 font-semibold">software engineering</span>.
-  </span>,
-  <span>
-    From a young age, I’ve been fascinated by <span className="text-cyan-500 font-semibold">robotics</span> and{" "}
-    <span className="text-cyan-500 font-semibold">interactive technologies</span>; from controlling battle bots to
-    immersive headset-based games. That curiosity sparked my love for creating solutions that combine creativity, logic,
-    and hands-on innovation.
-  </span>,
-  <span>
-    My ultimate goal is to become an <span className="text-cyan-500 font-semibold">entrepreneur and a leader</span>,
-    building meaningful products and using technology as a force for good. I’m deeply committed to helping those in
-    need, giving a voice to the marginalized, and creating opportunities for people who have faced hardship or violence.
-    In every project I tackle, I aim to merge technical excellence with empathy, designing software that makes a real
-    difference in people’s lives.
-  </span>,
-];
 
 export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex justify-center items-center bg-cover bg-center py-20 text-white"
-      style={{ backgroundImage: "url('src/assets/Blue-Pink-Geo.jpg')" }}
+      className="relative min-h-screen flex flex-col justify-center items-center py-20 px-6"
+      style={{ 
+        background: 'linear-gradient(135deg, #4d0099 0%, #330066 50%, #1a0033 100%)'
+      }}
     >
-      {/* Floating particles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {Array.from({ length: 25 }).map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1.5 h-1.5 bg-cyan-400 rounded-full blur-sm opacity-40"
-            initial={{ y: -50, x: Math.random() * 1000 }}
-            animate={{ y: 600, x: Math.random() * 1000 }}
-            transition={{ repeat: Infinity, duration: 15 + Math.random() * 10, ease: "linear" }}
-            style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%` }}
-          />
-        ))}
+      {/* Pixel grid */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            linear-gradient(#ff00ff 1px, transparent 1px),
+            linear-gradient(90deg, #ff00ff 1px, transparent 1px)
+          `,
+          backgroundSize: '30px 30px'
+        }}></div>
       </div>
 
-      {/* Main HUD panel */}
-      <motion.div
-        whileHover={{ scale: 1.01 }}
-        transition={{ type: "spring", stiffness: 50, damping: 20 }}
-        className="relative flex flex-col md:flex-row bg-gray-900/85 border-2 border-cyan-500 rounded-3xl 
-                   shadow-lg backdrop-blur-md max-w-6xl w-full p-10 md:p-12 z-10 overflow-hidden"
-      >
-        {/* Headshot */}
+      <div className="relative z-10 max-w-6xl w-full">
+        {/* Header */}
         <motion.div
-          whileHover={{ scale: 1.02 }}
-          transition={{ type: "spring", stiffness: 50, damping: 20 }}
-            className="relative flex-shrink-0 w-64 md:w-80 h-[32rem] rounded-2xl overflow-hidden
-                      border-4 border-cyan-400 shadow-[0_6px_0_rgba(0,0,0,0.4)] mb-6 md:mb-0 md:mr-12 self-start"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <div className="inline-block border-4 border-purple-500 px-8 py-4"
+            style={{
+              background: 'rgba(26, 0, 51, 0.8)',
+              boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)',
+              clipPath: 'polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px)'
+            }}
           >
-            <img
-              src={Headshot}
-              alt="Athena Jacob"
-              className="w-full h-full object-cover object-[75%_50%]"
-            />
+            <h2 className="text-4xl md:text-5xl font-bold text-white font-mono"
+              style={{
+                textShadow: '3px 3px 0 #ff00ff'
+              }}
+            >
+              [PLAYER INFO]
+            </h2>
+          </div>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Character Card */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="border-4 border-cyan-400 p-1"
+            style={{
+              background: '#000',
+              boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
+            }}
+          >
+            <div className="border-4 border-purple-600 overflow-hidden">
+              <img
+                src={Headshot}
+                alt="Athena Jacob"
+                className="w-full h-80 object-cover"
+                style={{
+                  imageRendering: 'crisp-edges'
+                }}
+              />
+            </div>
+            
+            {/* Stats bar */}
+            <div className="bg-black border-t-4 border-purple-600 p-3 font-mono text-xs">
+              <div className="flex justify-between mb-1">
+                <span className="text-cyan-400">CLASS:</span>
+                <span className="text-pink-400">DEVELOPER</span>
+              </div>
+              <div className="flex justify-between mb-1">
+                <span className="text-cyan-400">LEVEL:</span>
+                <span className="text-purple-400">FULL STACK</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-cyan-400">STATUS:</span>
+                <span className="text-green-400">ACTIVE</span>
+              </div>
+            </div>
           </motion.div>
 
-        {/* Social / Contact icons */}
-        <div className="flex gap-6 justify-center md:justify-start mt-6 md:mt-10">
-          <motion.a
-            whileHover={{ scale: 1.3, rotate: [0, -10, 10, 0] }}
-            whileTap={{ scale: 0.9 }}
-            href="https://github.com/Starfoxxy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-3xl p-3 rounded-full bg-gray-900/80 border-2 border-cyan-500 shadow-lg hover:shadow-cyan-400/60 transition"
+          {/* Bio Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-2 space-y-4"
           >
-            <FaGithub />
-          </motion.a>
-
-          <motion.a
-            whileHover={{ scale: 1.3, rotate: [0, -10, 10, 0] }}
-            whileTap={{ scale: 0.9 }}
-            href="https://linkedin.com/in/athena-jacob-aj"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-3xl p-3 rounded-full bg-gray-900/80 border-2 border-cyan-500 shadow-lg hover:shadow-blue-400/60 transition"
-          >
-            <FaLinkedin />
-          </motion.a>
-
-          <motion.a
-            whileHover={{ scale: 1.3, rotate: [0, -10, 10, 0] }}
-            whileTap={{ scale: 0.9 }}
-            href="mailto:athena.aj.jacob@gmail.com"
-            className="text-white text-3xl p-3 rounded-full bg-gray-900/80 border-2 border-cyan-500 shadow-lg hover:shadow-pink-400/60 transition"
-          >
-            <FaEnvelope />
-          </motion.a>
-
-          <motion.a
-            whileHover={{ scale: 1.3, rotate: [0, -10, 10, 0] }}
-            whileTap={{ scale: 0.9 }}
-            href="src/assets/Athena Jacob Resume 2025 .docx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-3xl p-3 rounded-full bg-gray-900/80 border-2 border-cyan-500 shadow-lg hover:shadow-green-400/60 transition"
-          >
-            <FaFileAlt />
-          </motion.a>
-        </div>
-
-
-        {/* Panels */}
-        <div className="flex-1 flex flex-col gap-6">
-          {bioCards.map((text, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.02 }}
-              animate={{
-                boxShadow: [
-                  "0 0 5px #00fff0, 0 0 10px #00fff0 inset",
-                  "0 0 15px #00fff0, 0 0 25px #00fff0 inset",
-                  "0 0 5px #00fff0, 0 0 10px #00fff0 inset",
-                ],
+            {/* Quest Log style bio */}
+            <div className="border-4 border-purple-500 bg-black p-6"
+              style={{
+                boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
+                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
               }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                repeatType: "mirror",
-                ease: "easeInOut",
-              }}
-              className="bg-gray-900/90 border-2 border-cyan-500 rounded-2xl p-6 
-                        shadow-md hover:shadow-[0_0_25px_#00fff0,0_0_50px_#00fff0]"
             >
-              <p className="text-gray-300 text-lg leading-relaxed">{text}</p>
-            </motion.div>
-          ))}
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-pink-400 font-mono text-xl">▶</span>
+                <h3 className="text-cyan-400 font-mono font-bold text-lg">ORIGIN_STORY.txt</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed font-mono text-sm mb-3">
+                I'm a <span className="text-purple-400">Full Stack Web Developer</span> with hands-on experience developing client projects through{" "}
+                <span className="text-cyan-400">The Knowledge House Innovation Fellowship</span>. I work with JavaScript, React, Next.js, Node.js, and modern tech stacks to build responsive and scalable applications.
+              </p>
+            </div>
+
+            <div className="border-4 border-purple-500 bg-black p-6"
+              style={{
+                boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
+                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
+              }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-pink-400 font-mono text-xl">▶</span>
+                <h3 className="text-cyan-400 font-mono font-bold text-lg">CURRENT_QUEST.txt</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed font-mono text-sm">
+                Currently partnering with <span className="text-purple-400">Prometheus</span> to deliver a full-featured events platform for the Teacher Accelerator Program (TAP), integrating advanced filtering, APIs, and HubSpot. As a{" "}
+                <span className="text-cyan-400">Digital Strategy Lead at ECHO5 Digital</span>, I combine technical skills with strategic thinking to optimize campaigns for 100+ clients.
+              </p>
+            </div>
+
+            <div className="border-4 border-purple-500 bg-black p-6"
+              style={{
+                boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
+                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
+              }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-pink-400 font-mono text-xl">▶</span>
+                <h3 className="text-cyan-400 font-mono font-bold text-lg">SPECIAL_ABILITIES.txt</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed font-mono text-sm">
+                From a young age, I've been fascinated by <span className="text-purple-400">robotics and interactive technologies</span>. That curiosity sparked my love for creating solutions that combine creativity, logic, and hands-on innovation. I bring a{" "}
+                <span className="text-cyan-400">collaborative, solution-driven mindset</span> to every project.
+              </p>
+            </div>
+          </motion.div>
         </div>
-      </motion.div>
+
+        {/* Social Links - Game Menu Style */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 flex flex-wrap gap-4 justify-center"
+        >
+          {[
+            { icon: FaGithub, url: "https://github.com/Starfoxxy", label: "GITHUB" },
+            { icon: FaLinkedin, url: "https://linkedin.com/in/athena-jacob-aj", label: "LINKEDIN" },
+            { icon: FaEnvelope, url: "mailto:athena.aj.jacob@gmail.com", label: "EMAIL" },
+            { icon: FaFileAlt, url: "src/assets/Athena Jacob Resume 2025 .docx", label: "RESUME" }
+          ].map((link, i) => (
+            <a
+              key={i}
+              href={link.url}
+              target={link.label !== "EMAIL" ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              className="border-4 border-purple-500 bg-black px-6 py-3 hover:bg-purple-900 transition group"
+              style={{
+                clipPath: 'polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)',
+                boxShadow: '3px 3px 0 #ff00ff'
+              }}
+            >
+              <div className="flex items-center gap-3">
+                <link.icon className="text-cyan-400 text-xl" />
+                <span className="text-white font-mono text-sm font-bold group-hover:text-pink-400 transition">
+                  [{link.label}]
+                </span>
+              </div>
+            </a>
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 }

@@ -1,105 +1,110 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const projects = [
-  {
-    title: "EcoBridge",
-    desc: "EcoBridge’s mission is to empower individuals with special needs through music, art, and storytelling.",
-    tech: ["React", "Node.js", "Express", "Bootstrap", "Prisma", "SQLite", "REST API"],
-    img: "src/assets/EcoBridge.png",
-    live: "https://ecobridge.com",
-    code: "https://github.com/tokslaw7/ecobridge.git",
-  },
-  {
-    title: "Travel Haven",
-    desc: "Travel Haven helps users explore destinations, discover attractions, and plan trips effortlessly.",
-    tech: ["React", "Express", "Supabase", "Tailwind CSS", "OpenTripMap API", "JavaScript"],
-    img: "src/assets/Travel-Haven.png",
-    live: "https://travelhaven.com",
-    code: "https://github.com/Starfoxxy/travel-planner-site.git",
-  },
-  {
-    title: "Donezo",
-    desc: "Donezo is a full-stack task management app for productivity and simplicity.",
-    tech: ["React", "TailwindCSS", "DaisyUI", "React Router", "Express", "Prisma", "Supabase"],
-    img: "src/assets/Donezo.gif",
-    live: "https://donezo.com",
-    code: "https://github.com/Starfoxxy/Athena_J_Donezo.git",
-  },
-];
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
     <section
-      id="projects"
-      className="py-20 bg-slate-950 text-white text-center relative"
-      style={{ backgroundImage: "url('src/assets/45200029_9077176.jpg')" }}
+      id="home"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center px-6"
+      style={{ 
+        background: 'linear-gradient(to bottom, #0a0a1a 0%, #1a0a2e 50%, #16213e 100%)'
+      }}
     >
-      <h2 className="text-5xl font-extrabold mb-12 drop-shadow-lg">My Projects</h2>
-      <div className="grid md:grid-cols-3 gap-10 px-6">
-        {projects.map((p, i) => (
+      {/* Starfield background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {Array.from({ length: 100 }).map((_, i) => (
           <motion.div
-            className="relative bg-gray-900 rounded-2xl shadow-2xl p-6 hover:shadow-pink-500/40 transition overflow-hidden border-2 border-pink-600 flex flex-col items-center"
-          >
-            {/* Image wrapper */}
-            <div className="w-full md:w-96 lg:w-[28rem] h-64 flex items-center justify-center mb-6">
-              <motion.img
-                src={p.img}
-                alt={p.title}
-                className="max-h-full max-w-full object-contain rounded-lg shadow-lg border-2 border-cyan-500"
-                whileHover={{ scale: 1.03 }}
-                transition={{ type: "spring", stiffness: 50, damping: 20 }}
-              />
-            </div>
-
-            {/* Title */}
-            <h3 className="text-3xl md:text-4xl font-extrabold text-white tracking-wider drop-shadow-2xl mb-5">
-              {p.title}
-            </h3>
-
-            {/* Description */}
-            <p className="text-gray-300 mb-6 text-center">{p.desc}</p>
-
-            {/* Tech badges */}
-            <div className="flex flex-wrap gap-3 justify-center mb-6">
-              {p.tech.map((tech, j) => (
-                <motion.span
-                  key={j}
-                  animate={{ y: [0, -3, 0] }}
-                  transition={{ repeat: Infinity, duration: 2 + j * 0.3, ease: "easeInOut" }}
-                  whileHover={{ scale: 1.15, rotate: [-5, 5, 0] }}
-                  className="px-3 py-1 text-sm font-bold uppercase text-white bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 
-                            border-2 border-white rounded-lg shadow-[0_3px_0_rgba(0,0,0,0.5)] tracking-wider select-none cursor-pointer transition-transform"
-                >
-                  {tech}
-                </motion.span>
-              ))}
-            </div>
-
-            {/* Buttons */}
-            <div className="flex gap-4 flex-wrap justify-center">
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                href={p.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full border border-cyan-500 text-cyan-400 hover:bg-cyan-500/20 transition"
-              >
-                See Project
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                href={p.code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full border border-purple-500 text-purple-400 hover:bg-purple-500/20 transition"
-              >
-                See Code
-              </motion.a>
-            </div>
-          </motion.div>
+            key={i}
+            className="absolute w-1 h-1 bg-white rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              opacity: Math.random() * 0.7 + 0.3,
+            }}
+            animate={{
+              opacity: [0.3, 1, 0.3],
+              scale: [1, 1.5, 1],
+            }}
+            transition={{
+              duration: Math.random() * 3 + 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          />
         ))}
       </div>
+
+      {/* Main content */}
+      <div className="relative z-10 max-w-4xl">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-6xl md:text-7xl font-bold mb-4 text-white"
+        >
+          Athena Jacob
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-2xl md:text-3xl text-cyan-400 mb-6 font-light"
+        >
+          Full Stack Developer
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
+        >
+          "Building responsive and scalable applications with a collaborative, solution-driven mindset."
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex gap-4 justify-center flex-wrap"
+        >
+          <a
+            href="#projects"
+            className="px-8 py-3 bg-cyan-600 text-white font-semibold rounded-lg hover:bg-cyan-500 transition"
+          >
+            View My Work
+          </a>
+
+          <a
+            href="/Athena Jacob Resume 2025 .md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 border-2 border-cyan-600 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-600/10 transition"
+          >
+            Resume
+          </a>
+        </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="text-cyan-400"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
