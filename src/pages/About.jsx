@@ -111,7 +111,8 @@ export default function About() {
                 <span className="text-cyan-400">The Knowledge House Innovation Fellowship</span>. I work with JavaScript, React, Next.js, Node.js, and modern tech stacks to build responsive and scalable applications.
               </p>
             </div>
-
+            
+            {/* Special Abilities */}
             <div className="border-4 border-purple-500 bg-black p-6"
               style={{
                 boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
@@ -123,7 +124,7 @@ export default function About() {
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">CURRENT_QUEST.txt</h3>
               </div>
               <p className="text-gray-300 leading-relaxed font-mono text-sm">
-                Currently partnering with <span className="text-purple-400">Prometheus</span> to deliver a full-featured events platform for the Teacher Accelerator Program (TAP), integrating advanced filtering, APIs, and HubSpot. As a{" "}
+                 Currently partnering with <span className="text-purple-400">Prometheus</span> to deliver a full-featured events platform for the Teacher Accelerator Program (TAP), integrating advanced filtering, APIs, and HubSpot. As a{" "}
                 <span className="text-cyan-400">Digital Strategy Lead at ECHO5 Digital</span>, I combine technical skills with strategic thinking to optimize campaigns for 100+ clients.
               </p>
             </div>
@@ -138,10 +139,62 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">SPECIAL_ABILITIES.txt</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed font-mono text-sm">
+              
+              {/* Tech Passion */}
+              <p className="text-gray-300 leading-relaxed font-mono text-sm mb-4">
                 From a young age, I've been fascinated by <span className="text-purple-400">robotics and interactive technologies</span>. That curiosity sparked my love for creating solutions that combine creativity, logic, and hands-on innovation. I bring a{" "}
-                <span className="text-cyan-400">collaborative, solution-driven mindset</span> to every project.
+                <span className="text-cyan-400">collaborative, solution-driven mindset</span> to every project, always seeking to learn and grow.
               </p>
+
+              {/* Diverse Interests */}
+              <div className="space-y-2 mt-4">
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Prosthetics & Assistive Tech:</span> Passionate about leveraging technology to create innovative solutions that improve accessibility and quality of life
+                </p>
+                
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Creative Writing:</span> Author of short stories and currently working on a book, blending storytelling with technical problem-solving skills
+                </p>
+                
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Music & Songwriting:</span> Singer-songwriter who brings the same creative approach to coding as composing melodies
+                </p>
+                
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Retro Gaming:</span> Classic video game enthusiast—where my love for interactive tech and user experience began
+                </p>
+              </div>
+            </div>
+
+            {/* Community Impact */}
+            <div className="border-4 border-purple-500 bg-black p-6"
+              style={{
+                boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
+                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
+              }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-pink-400 font-mono text-xl">▶</span>
+                <h3 className="text-cyan-400 font-mono font-bold text-lg">COMMUNITY_IMPACT.txt</h3>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Event Organizing:</span> Experienced in planning and coordinating community events, applying project management skills to bring people together
+                </p>
+                
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Essay Mentor:</span> Helped aspiring healthcare professionals gain admission to Master's and Nursing programs through personalized essay coaching and revision
+                </p>
+                
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Big Brother Big Sister Program (2015-2019):</span> Volunteered as a mentor providing guidance and support to youth in the community
+                </p>
+                
+                <p className="text-gray-300 font-mono text-sm">
+                  <span className="text-pink-400">▸</span> <span className="text-purple-400">International Peer Mentor @ Stony Brook (2015-2019):</span> Mentored new undergraduate international students, fostering cross-cultural connections and helping them navigate university life
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
