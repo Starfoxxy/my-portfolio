@@ -48,8 +48,8 @@ export default function About() {
           </div>
         </motion.div>
 
+        {/* Character Card */}
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Character Card */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -60,15 +60,18 @@ export default function About() {
               boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
             }}
           >
-            <div className="border-4 border-purple-600 overflow-hidden">
-              <img
-                src={Headshot}
-                alt="Athena Jacob"
-                className="w-full h-80 object-cover"
-                style={{
-                  imageRendering: 'crisp-edges'
-                }}
-              />
+            <div className="border-4 border-purple-600 overflow-hidden relative bg-gradient-to-br from-purple-900/20 to-cyan-900/20">
+              <div className="w-full h-80 flex items-center justify-center">
+                <img
+                  src={Headshot}
+                  alt="Athena Jacob"
+                  className="w-full h-full object-cover"
+                  style={{
+                    objectFit: 'cover',
+                    objectPosition: 'center center'
+                  }}
+                />
+              </div>
             </div>
             
             {/* Stats bar */}
@@ -88,14 +91,14 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Bio Content */}
+          {/* Quest Log style bio */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="md:col-span-2 space-y-4"
           >
-            {/* Quest Log style bio */}
+            {/* Origin Story */}
             <div className="border-4 border-purple-500 bg-black p-6"
               style={{
                 boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
@@ -106,13 +109,27 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">ORIGIN_STORY.txt</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed font-mono text-sm mb-3">
-                I'm a <span className="text-purple-400">Full Stack Web Developer</span> with hands-on experience developing client projects through{" "}
-                <span className="text-cyan-400">The Knowledge House Innovation Fellowship</span>. I work with JavaScript, React, Next.js, Node.js, and modern tech stacks to build responsive and scalable applications.
-              </p>
+              <div className="space-y-2">
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Full Stack Web Developer specializing in <span className="text-cyan-400">JavaScript, React, and Next.js</span> with hands-on experience building scalable, production-ready applications</span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Completing <span className="text-pink-400">The Knowledge House Innovation Fellowship</span> (900+ hours) with expertise in modern web technologies, Agile development, and collaborative software engineering</span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Built and deployed 5 production-ready applications using <span className="text-cyan-400"> React, TypeScript, Redux Toolkit, PostgreSQL, Prisma ORM, SQLite, Tailwind CSS, Bootstrap, and Material-UI</span></span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Background in digital marketing and CRM management, having driven <span className="text-green-400">20% ROI increase</span> and <span className="text-green-400">40% organic traffic growth</span> for 100+ clients</span>
+                </p>
+              </div>
             </div>
-            
-            {/* Special Abilities */}
+
+            {/* Current Quest */}
             <div className="border-4 border-purple-500 bg-black p-6"
               style={{
                 boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
@@ -123,12 +140,31 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">CURRENT_QUEST.txt</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed font-mono text-sm">
-                 Currently partnering with <span className="text-purple-400">Prometheus</span> to deliver a full-featured events platform for the Teacher Accelerator Program (TAP), integrating advanced filtering, APIs, and HubSpot. As a{" "}
-                <span className="text-cyan-400">Digital Strategy Lead at ECHO5 Digital</span>, I combine technical skills with strategic thinking to optimize campaigns for 100+ clients.
-              </p>
+              <div className="space-y-2">
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Currently architecting <span className="text-pink-400">TAP's Events platform</span> for Prometheus, implementing RESTful APIs, HubSpot CRM integration, and mobile-first responsive design</span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Designed and developed dynamic filtering system, responsive UI components, and custom RSVP functionality using <span className="text-cyan-400">Next.js, React, and Tailwind CSS</span></span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Engineered bi-directional data sync for automated event registrations with real-time RSVP updates and user engagement tracking</span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Built WCAG 2.1 accessibility-compliant interactive components with progressive scaling across all devices (iPhone SE to desktop)</span>
+                </p>
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Eager to bring a <span className="text-green-400">collaborative, solution-driven mindset</span> to a Full Stack Developer role</span>
+                </p>
+              </div>
             </div>
 
+            {/* Special Abilities */}
             <div className="border-4 border-purple-500 bg-black p-6"
               style={{
                 boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
@@ -140,65 +176,31 @@ export default function About() {
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">SPECIAL_ABILITIES.txt</h3>
               </div>
               
-              {/* Tech Passion */}
-              <p className="text-gray-300 leading-relaxed font-mono text-sm mb-4">
-                From a young age, I've been fascinated by <span className="text-purple-400">robotics and interactive technologies</span>. That curiosity sparked my love for creating solutions that combine creativity, logic, and hands-on innovation. I bring a{" "}
-                <span className="text-cyan-400">collaborative, solution-driven mindset</span> to every project, always seeking to learn and grow.
-              </p>
-
-              {/* Diverse Interests */}
-              <div className="space-y-2 mt-4">
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Prosthetics & Assistive Tech:</span> Passionate about leveraging technology to create innovative solutions that improve accessibility and quality of life
-                </p>
-                
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Creative Writing:</span> Author of short stories and currently working on a book, blending storytelling with technical problem-solving skills
-                </p>
-                
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Music & Songwriting:</span> Singer-songwriter who brings the same creative approach to coding as composing melodies
-                </p>
-                
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Retro Gaming:</span> Classic video game enthusiast—where my love for interactive tech and user experience began
-                </p>
-              </div>
-            </div>
-
-            {/* Community Impact */}
-            <div className="border-4 border-purple-500 bg-black p-6"
-              style={{
-                boxShadow: '0 0 20px rgba(255, 0, 255, 0.3)',
-                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
-              }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-pink-400 font-mono text-xl">▶</span>
-                <h3 className="text-cyan-400 font-mono font-bold text-lg">COMMUNITY_IMPACT.txt</h3>
-              </div>
-              
               <div className="space-y-2">
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Event Organizing:</span> Experienced in planning and coordinating community events, applying project management skills to bring people together
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-pink-400 flex-shrink-0">▸</span>
+                  <span><span className="text-purple-400">Robotics, Prosthetics & Interactive Technologies:</span> Fascinated by robotics, prosthetics, automation, and human-machine interaction from a young age—the curiosity that sparked my journey into programming and problem-solving</span>
                 </p>
                 
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Essay Mentor:</span> Helped aspiring healthcare professionals gain admission to Master's and Nursing programs through personalized essay coaching and revision
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-pink-400 flex-shrink-0">▸</span>
+                  <span><span className="text-purple-400">Creative Writing:</span> Author of short stories and currently working on a book, blending narrative storytelling with the same logical problem-solving approach used in development</span>
                 </p>
                 
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">Big Brother Big Sister Program (2015-2019):</span> Volunteered as a mentor providing guidance and support to youth in the community
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-pink-400 flex-shrink-0">▸</span>
+                  <span><span className="text-purple-400">Music & Songwriting:</span> Singer-songwriter who brings creative thinking and attention to detail from composing melodies to writing clean, maintainable code</span>
                 </p>
                 
-                <p className="text-gray-300 font-mono text-sm">
-                  <span className="text-pink-400">▸</span> <span className="text-purple-400">International Peer Mentor @ Stony Brook (2015-2019):</span> Mentored new undergraduate international students, fostering cross-cultural connections and helping them navigate university life
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-pink-400 flex-shrink-0">▸</span>
+                  <span><span className="text-purple-400">Classic Video Games:</span> Retro gaming enthusiast—where my passion for interactive technology, user experience, and game logic began</span>
                 </p>
               </div>
             </div>
           </motion.div>
         </div>
-
+            
         {/* Social Links - Game Menu Style */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -236,3 +238,6 @@ export default function About() {
     </section>
   );
 }
+
+
+
