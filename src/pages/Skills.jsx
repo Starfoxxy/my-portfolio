@@ -4,28 +4,33 @@ import { motion } from "framer-motion";
 const skills = [
   { 
     category: "FRONTEND",
-    items: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap", "HTML"],
+    items: ["JavaScript", "TypeScript", "React", "Next.js", "Redux Toolkit", "Tailwind CSS", "Bootstrap", "Material-UI", "Recharts"],
     color: "#ff00ff"
   },
   { 
     category: "BACKEND",
     items: ["Node.js", "Express", "Prisma"],
-    color: "#00ffff"
+    color: "#00ff66"
   },
   { 
     category: "DATABASE",
-    items: ["PostgreSQL", "SQLite", "Supabase"],
+    items: ["PostgreSQL", "MongoDB", "SQLite", "Supabase"],
     color: "#ff0099"
   },
   { 
     category: "TOOLS",
-    items: ["Vite", "Git", "Figma"],
-    color: "#9900ff"
+    items: ["VS Code", "GitHub", "Figma", "Notion", "Jira", "Chrome DevTools", "Jest", "React Testing Library", "Prompt Engineering"],
+    color: "#ff6600"
   },
   { 
-    category: "MARKETING",
-    items: ["Excel", "Google Analytics", "Google Ads", "HubSpot", "Mailchimp", "SEMRush", "WordPress", "Canva"],
-    color: "#ff6600"
+    category: "MARKETING & OPERATIONS",
+    items: ["Google Analytics", "Google Ads", "HubSpot", "SEMRush", "Mailchimp", "WordPress", "Excel", "Canva"],
+    color: "#00ffff"
+  },
+  { 
+    category: "DEVOPS & DEPLOYMENT",
+    items: ["Vite", "Docker", "Vercel", "Fly.io", "Git"],
+    color: "#ccff00"
   },
 ];
 
