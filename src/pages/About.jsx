@@ -109,19 +109,23 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">ORIGIN_STORY.txt</h3>
               </div>
+
               <div className="space-y-2">
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Full Stack Web Developer specializing in <span className="text-cyan-400">JavaScript, React, and Next.js</span> with hands-on experience building scalable, production-ready applications</span>
+                  <span>Full Stack Web Developer specializing in <span className="text-cyan-400">JavaScript, React, and Next.js</span> with hands-on experience building <span className="text-green-400">scalable</span>, <span className="text-green-400">production-ready</span> applications</span>
                 </p>
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Completing <span className="text-pink-400">The Knowledge House Innovation Fellowship</span> (900+ hours) with expertise in modern web technologies, Agile development, and collaborative software engineering</span>
+                  <span>Completing <span className="text-pink-400">The Knowledge House Innovation Fellowship</span> (900+ hours) with expertise in modern web technologies, <span className="text-green-400">Agile development</span>, and collaborative software engineering</span>
                 </p>
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Built and deployed 5 production-ready applications using <span className="text-cyan-400"> React, TypeScript, Redux Toolkit, PostgreSQL, Prisma ORM, SQLite, Tailwind CSS, Bootstrap, and Material-UI</span></span>
+                  <span>Built and deployed 5 production-ready applications using <span className="text-cyan-400">React, TypeScript, Redux Toolkit, PostgreSQL, Prisma ORM, SQLite, Tailwind CSS, Bootstrap, and Material-UI</span></span>
                 </p>
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
                   <span>Background in digital marketing and CRM management, having driven <span className="text-green-400">20% ROI increase</span> and <span className="text-green-400">40% organic traffic growth</span> for 100+ clients</span>
@@ -140,23 +144,23 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">CURRENT_QUEST.txt</h3>
               </div>
+
               <div className="space-y-2">
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Currently architecting <span className="text-pink-400">TAP's Events platform</span> for Prometheus, implementing RESTful APIs, HubSpot CRM integration, and mobile-first responsive design</span>
+                  <span>Architected <span className="text-pink-400">Teacher Accelerator Program (TAP)'s Events platform</span> implementing <span className="text-green-400">dynamic filtering</span>, <span className="text-green-400">RESTful APIs</span>, <span className="text-green-400">HubSpot CRM integration</span>, and <span className="text-green-400">mobile-first responsive design</span> using <span className="text-cyan-400">Next.js, React, and Tailwind CSS</span> with progressive scaling across all devices</span>
                 </p>
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Designed and developed dynamic filtering system, responsive UI components, and custom RSVP functionality using <span className="text-cyan-400">Next.js, React, and Tailwind CSS</span></span>
+                  <span>Engineered <span className="text-green-400">bi-directional data sync</span> for automated event registrations with real-time RSVP updates and user engagement tracking</span>
                 </p>
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Engineered bi-directional data sync for automated event registrations with real-time RSVP updates and user engagement tracking</span>
+                  <span>Built <span className="text-green-400">WCAG 2.1 accessibility-compliant interactive components</span> with multi-criteria search functionality and cross-browser compatibility</span>
                 </p>
-                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
-                  <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Built WCAG 2.1 accessibility-compliant interactive components with progressive scaling across all devices (iPhone SE to desktop)</span>
-                </p>
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
                   <span>Eager to bring a <span className="text-green-400">collaborative, solution-driven mindset</span> to a Full Stack Developer role</span>
@@ -175,26 +179,31 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">SPECIAL_ABILITIES.txt</h3>
               </div>
-              
+
               <div className="space-y-2">
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-pink-400 flex-shrink-0">▸</span>
-                  <span><span className="text-purple-400">Robotics, Prosthetics & Interactive Technologies:</span> Fascinated by robotics, prosthetics, automation, and human-machine interaction from a young age—the curiosity that sparked my journey into programming and problem-solving</span>
+                  <span><span className="text-purple-400">Robotics & Raspberry Pi Projects:</span> Exploring robotic arms and sensors using Raspberry Pi, starting with <span className="text-cyan-400">Python</span>-based prototyping and coding movements</span>
                 </p>
-                
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-pink-400 flex-shrink-0">▸</span>
-                  <span><span className="text-purple-400">Creative Writing:</span> Author of short stories and currently working on a book, blending narrative storytelling with the same logical problem-solving approach used in development</span>
+                  <span><span className="text-purple-400">Game Development:</span> Developing a personal game using <span className="text-cyan-400">Unity & C#</span>, designing gameplay, mechanics, and interactive elements</span>
                 </p>
-                
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-pink-400 flex-shrink-0">▸</span>
-                  <span><span className="text-purple-400">Music & Songwriting:</span> Singer-songwriter who brings creative thinking and attention to detail from composing melodies to writing clean, maintainable code</span>
+                  <span><span className="text-purple-400">Creative Writing:</span> Author of short stories and currently working on a book, blending <span className="text-green-400">narrative storytelling</span> with the same logical problem-solving approach used in development</span>
                 </p>
-                
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-pink-400 flex-shrink-0">▸</span>
-                  <span><span className="text-purple-400">Classic Video Games:</span> Retro gaming enthusiast—where my passion for interactive technology, user experience, and game logic began</span>
+                  <span><span className="text-purple-400">Music & Songwriting:</span> Singer-songwriter who brings <span className="text-green-400">creative thinking</span> and <span className="text-green-400">attention to detail</span> from composing melodies to writing clean, maintainable code</span>
+                </p>
+
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-pink-400 flex-shrink-0">▸</span>
+                  <span><span className="text-purple-400">Classic Video Games:</span> Retro gaming enthusiast—where my passion for <span className="text-green-400">interactive technology</span>, <span className="text-green-400">user experience</span>, and <span className="text-green-400">game logic</span> began</span>
                 </p>
               </div>
             </div>
