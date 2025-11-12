@@ -18,13 +18,13 @@ const experiences = [
     title: "Innovation Fellowship - Web Development Track",
     company: "The Knowledge House",
     location: "Remote, NY",
-    period: "2025 (900+ hrs)",
+    period: "2025-Present",
     description: "Completed intensive full-stack development training in JavaScript, TypeScript, React, Next.js, Node.js/Express, and databases (PostgreSQL, Prisma, SQLite). Built and deployed 5 production-ready applications.",
     highlights: [
       "Applied Agile/Scrum methodologies: daily standups, code reviews, PR workflows, and cross-functional collaboration using Jira, Notion, Slack",
       "Attended workshops by senior engineers from Google, Microsoft, and IBM on system design, scalable architecture, and cloud deployment (Vercel, Netlify)"
     ],
-    color: "#00ff00"
+    color: "#ff00ff"
   },
   {
     title: "Digital Strategy Lead",
@@ -37,7 +37,7 @@ const experiences = [
       "Enhanced on-page SEO, optimizing meta descriptions, page titles, header tags, alt texts, and URL structures, leading to a 35% improvement in search rankings and a 40% increase in organic traffic",
       "Developed and executed targeted email marketing campaigns via Mailchimp and HubSpot, segmenting audiences and optimizing send times, resulting in a 15% increase in email open rates and a 10% boost in conversions"
     ],
-    color: "#ff006e"
+    color: "#00ff00"
   },
   {
     title: "Office Manager",
@@ -51,7 +51,7 @@ const experiences = [
       "Processed and reviewed over 1,000 insurance claims using ICD codes, reducing errors by 20%",
       "Managed financial operations for a $5M budget, improving cash flow efficiency by 60%"
     ],
-    color: "#ff00ff"
+    color: "#9900ff"
   },
   {
     title: "Archivist",
@@ -78,7 +78,7 @@ const experiences = [
       "Prepared meals tailored to dietary restrictions, reducing choking incidents by 25%",
       "Increased resident engagement by 50% through interactive enrichment activities"
     ],
-    color: "#9900ff"
+    color: "#ff006e"
   },
   {
     title: "Community & Volunteer Engagement",
@@ -154,6 +154,13 @@ const education = [
     period: "Completed",
     details: "Major: Psychology | Minor: Linguistics",
     color: "#ff00ff",
+  },
+  {
+    school: "AWS Certified Cloud Practitioner",
+    degree: "Certification",
+    period: "In Progress",
+    details: "Cloud fundamentals, core AWS services, security, and architecture best practices",
+    color: "#ff9900",
   },
 ];
 
@@ -268,10 +275,16 @@ export default function Experience() {
 
                 {/* Highlights */}
                 <div className="space-y-2">
-                  {exp.highlights.map((highlight, j) => (
+                  {exp.highlights?.map((highlight, j) => (
                     <div key={j} className="flex items-start gap-2">
-                      <span className="font-mono mt-1" style={{ color: exp.color }}>▸</span>
-                      <span className="text-gray-300 text-sm font-mono leading-relaxed">{highlight}</span>
+                      {typeof highlight === 'string' ? (
+                        <>
+                          <span className="font-mono mt-1" style={{ color: exp.color }}>▸</span>
+                          <span className="text-gray-300 text-sm font-mono leading-relaxed">{highlight}</span>
+                        </>
+                      ) : (
+                        highlight
+                      )}
                     </div>
                   ))}
                 </div>
@@ -321,7 +334,7 @@ export default function Experience() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
             {education.map((edu, i) => (
               <motion.div
                 key={i}
@@ -336,9 +349,9 @@ export default function Experience() {
                   clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)'
                 }}
               >
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center justify-between mb-3 flex-wrap md:flex-nowrap">
                   <h4 className="text-xl font-bold text-white font-mono">{edu.school}</h4>
-                  <span className="text-xs font-mono px-2 py-1 border-2"
+                  <span className="text-xs font-mono px-3 py-1 border-2 whitespace-nowrap"
                     style={{
                       borderColor: edu.color ,
                       color: edu.color 
@@ -350,14 +363,7 @@ export default function Experience() {
                 <p className="font-mono font-bold mb-2" style={{ color: edu.color }}>
                   {edu.degree}
                 </p>
-                <div className="space-y-2">
-                  {edu.highlights.map((point, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <span className="text-xs font-mono mt-1" style={{ color: edu.color }}>▸</span>
-                      <span className="text-gray-300 text-sm font-mono leading-relaxed">{point}</span>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-gray-400 text-sm font-mono">{edu.details}</p>
               </motion.div>
             ))}
           </div>
