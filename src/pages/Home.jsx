@@ -151,7 +151,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/Athena Jacob Resume 2025 .md"
+              href="src/assets/Tech Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-transparent text-cyan-400 font-bold font-mono border-4 border-cyan-400 hover:bg-cyan-400 hover:text-black transition"
