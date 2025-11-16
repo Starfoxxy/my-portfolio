@@ -221,7 +221,7 @@ export default function About() {
             { icon: FaGithub, url: "https://github.com/Starfoxxy", label: "GITHUB" },
             { icon: FaLinkedin, url: "https://linkedin.com/in/athena-jacob-aj", label: "LINKEDIN" },
             { icon: FaEnvelope, url: "mailto:athena.aj.jacob@gmail.com", label: "EMAIL" },
-            { icon: FaFileAlt, url: "src/assets/Athena Jacob Resume 2025 .docx", label: "RESUME" }
+            { icon: FaFileAlt, url: "src/assets/Tech Resume.pdf", label: "RESUME" }
           ].map((link, i) => (
             <a
               key={i}
