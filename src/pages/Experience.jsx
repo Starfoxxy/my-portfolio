@@ -10,7 +10,8 @@ const experiences = [
     description: "Collaborating with Prometheus and the Teacher Accelerator Program (TAP) team to design and develop TAP's Events page, implementing dynamic filtering, responsive UI, and API integrations using Next.js, React, and Tailwind CSS.",
     highlights: [
       "Integrating HubSpot to manage event registrations and automate user engagement tracking, improving functionality and CRM data flow",
-      "Engineering advanced event filtering and upcoming events functionality, ensuring full cross-browser and mobile compatibility while enhancing event discoverability, responsiveness, and accessibility"
+      "Engineering advanced event filtering and upcoming events functionality, ensuring full cross-browser and mobile compatibility while enhancing event discoverability, responsiveness, and accessibility",
+      "Collaborated in Agile workflows, participating in sprint planning, code reviews, and continuous integration/deployment, increasing development velocity and code quality"
     ],
     color: "#00ffff"
   },
@@ -19,10 +20,12 @@ const experiences = [
     company: "The Knowledge House",
     location: "Remote, NY",
     period: "2025-Present",
-    description: "Completed intensive full-stack development training in JavaScript, TypeScript, React, Next.js, Node.js/Express, and databases (PostgreSQL, Prisma, SQLite). Built and deployed 5 production-ready applications.",
+    description:
+      "Completed intensive full-stack development training in JavaScript, TypeScript, React, Next.js, Node.js/Express, and databases (PostgreSQL, Prisma, SQLite). Built and deployed 5 production-ready applications.",
     highlights: [
-      "Applied Agile/Scrum methodologies: daily standups, code reviews, PR workflows, and cross-functional collaboration using Jira, Notion, Slack",
-      "Attended workshops by senior engineers from Google, Microsoft, and IBM on system design, scalable architecture, and cloud deployment (Vercel, Netlify)"
+      "Applied Agile/Scrum methodologies, including daily standups, code reviews, PR workflows, and cross-functional collaboration using Jira, Notion, and Slack",
+      "Attended workshops by senior engineers from Google, Microsoft, and IBM on system design, scalable architecture, and cloud deployment (Vercel, Netlify)",
+      "Developed automated testing pipelines with Jest and React Testing Library to reduce bug rates by 50%"
     ],
     color: "#ff00ff"
   },
@@ -31,11 +34,13 @@ const experiences = [
     company: "ECHO5 Digital",
     location: "Remote, TX",
     period: "2023 - 2025",
-    description: "Utilized Google Analytics to track, analyze, and report on website performance, identifying trends and key metrics to inform data-driven marketing strategies for 100+ clients.",
+    description:
+      "Directed digital marketing strategy and analytics for 100+ clients, leveraging data-driven insights to optimize campaigns, improve conversion, and increase ROI.",
     highlights: [
-      "Created and managed Google Ads campaigns, performing in-depth keyword research and bid management, resulting in a 20% increase in ROI within the first quarter",
-      "Enhanced on-page SEO, optimizing meta descriptions, page titles, header tags, alt texts, and URL structures, leading to a 35% improvement in search rankings and a 40% increase in organic traffic",
-      "Developed and executed targeted email marketing campaigns via Mailchimp and HubSpot, segmenting audiences and optimizing send times, resulting in a 15% increase in email open rates and a 10% boost in conversions"
+      "Managed Google Ads campaigns with in-depth keyword research and bid optimization, achieving a 20% increase in ROI within the first quarter",
+      "Enhanced SEO performance through meta optimization, header tags, alt texts, and URL structures, increasing organic traffic by 40% and improving search rankings by 35%",
+      "Executed segmented email campaigns via Mailchimp and HubSpot, optimizing content and delivery to achieve a 15% increase in open rates and 10% conversion growth",
+      "Implemented dashboarding and reporting workflows for clients using Google Analytics, improving visibility into KPIs and campaign performance"
     ],
     color: "#00ff00"
   },
@@ -44,11 +49,12 @@ const experiences = [
     company: "Bashir MD PLLC",
     location: "Centereach, NY",
     period: "2021 - 2023",
-    description: "Coordinated professional correspondence on behalf of doctor and specialists, negotiating partnership agreements and service contracts with leading medical technology companies.",
+    description:
+      "Oversaw clinic operations, coordinated professional correspondence, and negotiated service contracts with medical technology partners, streamlining workflow and improving operational efficiency.",
     highlights: [
-      "Boosted profits 30% annually by leveraging HEDIS software through partnerships with Catholic Health",
-      "Reduced patient wait time, referral processing, records retrieval, and medication approval time by 75% by designing new systems",
-      "Processed and reviewed over 1,000 insurance claims using ICD codes, reducing errors by 20%",
+      "Boosted annual profits by 30% through process improvements and leveraging HEDIS software partnerships with Catholic Health",
+      "Redesigned patient intake, referral, and medication workflows, reducing processing time by 75%",
+      "Processed and reviewed over 1,000 insurance claims, reducing errors by 20%",
       "Managed financial operations for a $5M budget, improving cash flow efficiency by 60%"
     ],
     color: "#9900ff"
@@ -57,12 +63,13 @@ const experiences = [
     title: "Archivist",
     company: "Algonquian Revitalization Project",
     location: "Stony Brook, NY",
-    period: "2021 - 2022",
-    description: "Supported recovery, preservation, and digitization of 500+ historical texts central to Algonquian language revitalization.",
+    period: "2020-2021",
+    description:
+      "Led the recovery, restoration, and cataloging of historical Algonquian language texts, establishing foundational records in the ALRPlibrary database and improving archival accessibility.",
     highlights: [
-      "Recovered, cleaned, and preserved over 400 damaged historical texts, preventing 80% loss of archival materials",
-      "Designed custom digital database cataloging 500+ resources, improving retrieval efficiency by 60%",
-      "Contributed to 15% increase in community engagement through accessible materials"
+      "Recovered and cataloged 500+ historical texts into the ALRPlibrary database, ensuring preservation and community access",
+      "Implemented indexing and tagging strategies to improve searchability and retrieval efficiency within the database",
+      "Coordinated with community stakeholders to maintain culturally respectful handling of materials and enable wider access to revitalized resources"
     ],
     color: "#ff6b35"
   },
@@ -71,15 +78,32 @@ const experiences = [
     company: "Young Adult Institute",
     location: "Medford, NY",
     period: "2019 - 2021",
-    description: "Provided daily care for 8 adult residents with developmental and physical disabilities, administering medications and performing health assessments.",
+    description:
+    "Provided comprehensive daily care for residents with developmental and physical disabilities, administering medications, documenting health and behavioral data, coordinating therapy sessions, and optimizing care workflows to enhance safety and engagement.",
     highlights: [
-      "Managed seizures using VNS system, reducing intensity and duration in 90% of cases",
-      "Maintained 100% accurate medical records ensuring seamless continuity of care",
-      "Prepared meals tailored to dietary restrictions, reducing choking incidents by 25%",
-      "Increased resident engagement by 50% through interactive enrichment activities"
+      "Administered medications and maintained detailed records of behavioral observations and health data, using insights to inform care adjustments and support therapy recommendations",
+      "Scheduled and coordinated therapy sessions with speech, physical, and occupational therapists, along with primary care doctor visits, ensuring timely follow-ups and continuity of care",
+      "Prepared specialized meals tailored to dietary needs, reducing choking incidents by 25%",
+      "Boosted resident engagement by 50% through structured enrichment programs and interactive activities"
     ],
     color: "#ff006e"
   },
+  {
+    title: "Program Coordinator – Mindfulness Division",
+    company: "Stony Brook University",
+    location: "Stony Brook, NY",
+    period: "2018 - 2019",
+    description:
+      "Directed operations and execution for the campus Mindfulness Division, leading in-person programs, workshops, and student projects to teach stress-management and mindfulness techniques.",
+    highlights: [
+      "Organized and facilitated 30+ in-person workshops for 350+ students and faculty, increasing participation by 25% through structured lesson plans and hands-on practice",
+      "Provided individualized mentorship to 75+ students on mindfulness-based projects, achieving a 100% completion rate and supporting successful presentations",
+      "Developed 50+ physical and digital learning assets (guides, handouts, presentation decks) to enhance curriculum delivery and accessibility",
+      "Built campus partnerships with student life, housing, and local organizations, increasing program reach by 30% and engagement among students and staff",
+      "Streamlined administrative operations across 30 weeks, managing 500+ communications (emails, calls, scheduling) to ensure smooth coordination with faculty, students, and partners"
+    ],
+    color: "#00ccff"
+  },  
   {
     title: "Community & Volunteer Engagement",
     company: "Various Programs & Organizations",
@@ -90,7 +114,7 @@ const experiences = [
       <span className="text-gray-300 font-mono text-sm flex items-start gap-2">
         <span className="text-green-400 flex-shrink-0">▸</span>
         <span>
-          <span className="text-cyan-400">Essay Mentor:</span> Guided aspiring healthcare professionals in gaining admission to <span className="text-pink-400">Master's</span> and <span className="text-pink-400">Nursing programs</span> through personalized coaching, editing, and strategic revision
+          <span className="text-cyan-400">Essay Mentor:</span> Guided aspiring healthcare professionals in gaining admission to <span className="text-pink-400">Master's</span> and <span className="text-pink-400">Nursing programs</span> through structured coaching and strategic feedback
         </span>
       </span>,
   
@@ -104,35 +128,35 @@ const experiences = [
       <span className="text-gray-300 font-mono text-sm flex items-start gap-2">
         <span className="text-green-400 flex-shrink-0">▸</span>
         <span>
-          <span className="text-cyan-400">International Peer Mentor:</span> Assisted new undergraduate international students in navigating university life, fostering cross-cultural connections
+          <span className="text-cyan-400">International Peer Mentor:</span> Supported new undergraduate international students in navigating university life and fostering cross-cultural connections
         </span>
       </span>,
   
       <span className="text-gray-300 font-mono text-sm flex items-start gap-2">
         <span className="text-green-400 flex-shrink-0">▸</span>
         <span>
-          <span className="text-cyan-400">Campaigning & Community Outreach:</span> Conducted presentations, made calls, and went door-to-door to raise awareness for local initiatives
+          <span className="text-cyan-400">Campaigning & Community Outreach:</span> Conducted presentations, phone calls, and door-to-door outreach for the NY 1st District, educating and mobilizing local voters on civic participation
         </span>
       </span>,
   
       <span className="text-gray-300 font-mono text-sm flex items-start gap-2">
         <span className="text-green-400 flex-shrink-0">▸</span>
         <span>
-          <span className="text-cyan-400">Special Olympics Volunteer:</span> Assisted with event setup, guided participants to stations, timed competitions, and ensured smooth operations
+          <span className="text-cyan-400">Special Olympics Volunteer:</span> Assisted with event setup, guided participants, timed competitions, and ensured smooth operations
         </span>
       </span>,
   
       <span className="text-gray-300 font-mono text-sm flex items-start gap-2">
         <span className="text-green-400 flex-shrink-0">▸</span>
         <span>
-          <span className="text-cyan-400">Helping Honduras & Thrift Shop Events:</span> Collected donations, tagged and sorted clothes, coordinated bake sales, and supported fundraising efforts via <span className="text-pink-400">onethousandschools.com</span>
+          <span className="text-cyan-400">Helping Honduras & Thrift Shop Events:</span> Led donation drives, sorted and prepared items for distribution, coordinated fundraising events, and amplified impact through online campaigns via <span className="text-pink-400">onethousandschools.com</span>
         </span>
       </span>,
   
       <span className="text-gray-300 font-mono text-sm flex items-start gap-2">
         <span className="text-green-400 flex-shrink-0">▸</span>
         <span>
-          <span className="text-cyan-400">Circle K Volunteering:</span> Prepared snack packs, lunches, and hygiene kits for homeless populations, wrote letters to veterans, coordinated toy drives and UNICEF donation boxes, and promoted mental health awareness via <span className="text-pink-400">circlek.org</span>
+          <span className="text-cyan-400">Circle K Volunteering:</span> Prepared snack packs, lunches, and hygiene kits for the houseless, organized toy drives and UNICEF donation boxes, coordinated writing letters to veterans, and promoted mental health awareness via <span className="text-pink-400">circlek.org</span>
         </span>
       </span>,
   
