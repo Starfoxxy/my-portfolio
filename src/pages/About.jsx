@@ -78,11 +78,11 @@ export default function About() {
             <div className="bg-black border-t-4 border-purple-600 p-3 font-mono text-xs">
               <div className="flex justify-between mb-1">
                 <span className="text-cyan-400">CLASS:</span>
-                <span className="text-pink-400">DEVELOPER</span>
+                <span className="text-yellow-400">DEVELOPER</span>
               </div>
               <div className="flex justify-between mb-1">
                 <span className="text-cyan-400">LEVEL:</span>
-                <span className="text-purple-400">FULL STACK</span>
+                <span className="text-pink-400">FULL STACK</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-cyan-400">STATUS:</span>
@@ -113,7 +113,7 @@ export default function About() {
               <div className="space-y-2">
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Full Stack Web Developer specializing in <span className="text-cyan-400">JavaScript, React, and Next.js</span> with hands-on experience building <span className="text-green-400">scalable</span>, <span className="text-green-400">production-ready</span> applications</span>
+                  <span><span className="text-yellow-400">Full Stack Web Developer</span> specializing in <span className="text-cyan-400">JavaScript, React, and Next.js</span> with hands-on experience building <span className="text-green-400">scalable</span>, <span className="text-green-400">production-ready</span> applications</span>
                 </p>
 
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
@@ -144,11 +144,17 @@ export default function About() {
                 <span className="text-pink-400 font-mono text-xl">▶</span>
                 <h3 className="text-cyan-400 font-mono font-bold text-lg">CURRENT_QUEST.txt</h3>
               </div>
-
+              
               <div className="space-y-2">
+
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
                   <span className="text-purple-400 flex-shrink-0">▸</span>
-                  <span>Architected <span className="text-pink-400">Teacher Accelerator Program (TAP)'s Events platform</span> implementing <span className="text-green-400">dynamic filtering</span>, <span className="text-green-400">RESTful APIs</span>, <span className="text-green-400">HubSpot CRM integration</span>, and <span className="text-green-400">mobile-first responsive design</span> using <span className="text-cyan-400">Next.js, React, and Tailwind CSS</span> with progressive scaling across all devices</span>
+                  <span><span className="text-yellow-400">Full Stack Developer</span> at <span className="text-pink-400">Prometheus</span>, building client-facing products for organizations including the <span className="text-pink-400">Teacher Accelerator Program (TAP)</span>, with upcoming development work for <span className="text-pink-400">Penta Medical Recycling</span> on interactive <span className="text-green-400">3D prosthetic graphics</span></span>
+                </p>
+
+                <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
+                  <span className="text-purple-400 flex-shrink-0">▸</span>
+                  <span>Architected <span className="text-pink-400">TAP's Events platform</span> implementing <span className="text-green-400">dynamic filtering</span>, <span className="text-green-400">RESTful APIs</span>, <span className="text-green-400">HubSpot CRM integration</span>, and <span className="text-green-400">mobile-first responsive design</span> using <span className="text-cyan-400">Next.js, React, and Tailwind CSS</span> with progressive scaling across all devices</span>
                 </p>
 
                 <p className="text-gray-300 font-mono text-sm flex items-start gap-2">
